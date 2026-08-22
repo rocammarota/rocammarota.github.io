@@ -7,13 +7,14 @@
 
   <title>Research | Ro Cammarota</title>
 
-  <link rel="stylesheet" href="assets/css/site.css?v=20260821-2">
+  <link rel="stylesheet" href="assets/css/site.css?v=20260821-6">
 </head>
 
 <body>
 
   <header class="site-header">
     <div class="nav-wrap">
+
       <a class="brand" href="index.html">
         <span>Ro Cammarota</span>
       </a>
@@ -26,171 +27,356 @@
         <a href="teaching.html">Teaching</a>
         <a href="about.html">About</a>
       </nav>
+
     </div>
   </header>
 
-  <main>
+
+  <main class="research-page">
+
+    <!-- =====================================================
+         Research Overview
+         ===================================================== -->
 
     <section class="hero">
-      <div class="kicker">Research</div>
 
-      <h1>Research &amp; Development</h1>
+      <div class="kicker">
+        Research
+      </div>
+
+      <h1>Research &amp; Development Areas</h1>
 
       <p class="lead">
-        Cryptography and computing systems designed for security,
-        privacy, and trustworthy execution.
+        Building secure, private, and resilient computing systems for
+        an infrastructure increasingly shaped by artificial intelligence,
+        quantum technologies, and changing adversarial capabilities.
       </p>
+
     </section>
 
 
     <section>
 
-      <h2 id="post-quantum-security">Post-Quantum Cryptography</h2>
-
       <p>
-        I study the post-quantum transition as a systems problem.
-        My work focuses on standards-aligned implementations,
-        interoperability, cryptographic agility, performance,
-        reproducible validation, and the software and architectural
-        foundations needed for practical migration.
+        My research approach examines how computing systems should evolve as artificial
+        intelligence, quantum technologies, and increasingly adversarial
+        environments change the assumptions on which security, privacy, and
+        trust have traditionally depended.
       </p>
 
       <p>
-        A central part of this work is understanding how post-quantum
-        cryptography moves from standards and algorithms into real
-        systems. This includes implementation correctness, protocol
-        integration, performance and memory costs, software interfaces,
-        hardware implications, and the ability of systems to evolve as
-        standards and deployment requirements change.
-      </p>
-
-
-      <h2 id="privacy-enhancing-technologies">Privacy-Enhancing Technologies</h2>
-
-      <p>
-        My research in privacy-enhancing technologies investigates how
-        sensitive information can remain protected not only while it is
-        stored or communicated, but also while it is being processed.
+        I tackle these challenges as end-to-end systems problems spanning
+        cryptography, algorithms, software, computer architecture, and hardware.
+        The emphasis is not only on developing new mechanisms, but on
+        understanding how they move from standards and research prototypes
+        into modular, interoperable, measurable, resilient, and deployable systems.
       </p>
 
       <p>
-        This work includes Fully Homomorphic Encryption, secure
-        computation, trusted execution, privacy-preserving machine
-        learning, and the software and hardware systems needed to make
-        these technologies practical.
+        The current research program develops along four closely connected
+        directions: post-quantum cryptography, privacy-enhancing technologies,
+        confidential intelligence, and secure AI and hardware security.
+        Across these areas, the broader objective is to make security,
+        privacy, and resilience foundational properties of emerging computing
+        infrastructure rather than capabilities added after systems have
+        already been designed.
       </p>
 
+    </section>
 
-      <h2 id="confidential-intelligence">Confidential Intelligence</h2>
 
-      <p>
-        Confidential Intelligence asks a broader question:
-        what forms of computation would we design if confidentiality
-        were treated as a first-class design principle from the outset?
-      </p>
+    <!-- =====================================================
+         Post-Quantum Cryptography
+         ===================================================== -->
 
-      <p>
-        Rather than adapting algorithms designed for plaintext execution
-        after the fact, I investigate the co-design of computational
-        paradigms, data representations, cryptography, software systems,
-        compilers, architectures, and hardware around the requirements of
-        confidential execution.
-      </p>
+    <section id="post-quantum-security">
+
+      <h2>Post-Quantum Cryptography</h2>
 
       <p>
-        Hyperdimensional Computing and Fully Homomorphic Encryption
-        currently serve as one experimental vehicle for studying this
-        question, particularly the relationship between computational
-        structure and confidential execution.
-      </p>
-
-
-      <h2 id="secure-ai-hardware-security">Secure AI and Hardware Security</h2>
-
-      <p>
-        I also study how intelligent and cryptographic systems behave
-        under physical and architectural attack.
+        The transition to post-quantum cryptography is a systems transformation
+        rather than a simple replacement of cryptographic primitives.
+        New standards must ultimately coexist with protocols, software
+        interfaces, hardware, legacy infrastructure, and long-lived
+        applications. Migration therefore raises questions of cryptographic
+        agility, interoperability, assurance, performance, resilience, and
+        maintainability across the computing stack.
       </p>
 
       <p>
-        This research includes side-channel analysis, fault injection,
-        secure accelerators, architectural protection mechanisms,
-        resilient computation, and the design of systems that preserve
-        security assumptions even when the underlying hardware is
-        observable or adversarially manipulated.
+        This work studies the path from standards to deployment. The goal is
+        to understand how quantum-resistant mechanisms can become dependable
+        components of real systems while preserving explicit security
+        boundaries, interoperability, reproducibility, and the ability to
+        evolve as standards and deployment requirements change.
       </p>
 
-
-      <h2>Systems and Architecture for Cryptography</h2>
-
-      <p>
-        Across these areas, I am interested in the systems consequences
-        of cryptography: software architecture, programming models,
-        compilers, runtime systems, memory organization, accelerators,
-        and hardware-software co-design.
-      </p>
-
-      <p>
-        The common objective is to move security and privacy from
-        peripheral mechanisms into fundamental properties of the
-        computing stack.
-      </p>
-
-
-      <h2>Selected Projects and Platforms</h2>
+      <h3>Active Open-Source Research Platforms (MIT License) include:</h3>
 
       <div class="pub">
-        <h3>PQC-rs</h3>
-        <p>
-          An open-source Rust research platform for implementing and
-          experimentally evaluating post-quantum cryptography.
-        </p>
-      </div>
 
-      <div class="pub">
-        <h3>PQC-forge</h3>
-        <p>
-          Infrastructure for systematic experimentation, evaluation,
-          and reproducibility in post-quantum cryptography.
-        </p>
-      </div>
-
-      <div class="pub">
-        <h3>hdc-fhe-rs</h3>
-        <p>
-          A modular Rust research platform for studying Hyperdimensional
-          Computing under plaintext and confidential execution.
-        </p>
-      </div>
-
-      <div class="pub">
-        <h3>HERACLES</h3>
-        <p>
-          A hardware-software platform for high-performance fully homomorphic
-          encrypted computation developed through the DARPA DPRIVE program.
-        </p>
-      </div>
-
-
-      <h2>Research Philosophy</h2>
-
-      <p>
-        My work emphasizes full-stack and experimentally reproducible
-        research. Mathematical security guarantees are essential, but
-        practical systems must also address implementation correctness,
-        interoperability, performance, software interfaces, hardware
-        behavior, side channels, and deployment.
-      </p>
-
-      <p>
-        My broader research mission is to make
         <strong>
-          security and privacy guarantees foundational to modern computing
-        </strong>.
+          <a href="https://github.com/Confidential-Intelligence-Lab/pqc-rs">
+            PQC-rs
+          </a>
+        </strong>
+
+        — an open-source Rust research platform for standards-driven
+        post-quantum cryptography. PQC-rs emphasizes auditable implementations,
+        explicit security boundaries, interoperability, cryptographic agility,
+        reproducible validation, and measured performance.
+
+      </div>
+
+
+      <div class="pub">
+
+        <strong>
+          <a href="https://github.com/Confidential-Intelligence-Lab/pqc-rs">
+            PQC-forge
+          </a>
+        </strong>
+
+        — a systems research framework for studying how cryptographic
+        capabilities are composed, negotiated, changed, and evaluated within
+        applications. The focus is application- and protocol-level
+        cryptographic agility: understanding what must change during migration,
+        what can remain localized, and how performance, interoperability, and
+        assurance can be evaluated reproducibly.
+
+      </div>
+
+
+
+      <p>
+        Together, these efforts treat post-quantum migration as more than
+        algorithm adoption. They connect standards, software architecture,
+        protocol composition, experimental evaluation, and resilient execution
+        into a common systems problem.
+      </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         Privacy-Enhancing Technologies
+         ===================================================== -->
+
+    <section id="privacy-enhancing-technologies">
+
+      <h2>Privacy-Enhancing Technologies</h2>
+
+      <p>
+        Privacy-enhancing technologies seek to reduce the exposure of sensitive
+        information throughout computation, not only while data is stored or
+        transmitted. My work spans encrypted computation, secure computation,
+        trusted execution, privacy-preserving artificial intelligence,
+        software systems, specialized architectures, and hardware acceleration.
       </p>
 
       <p>
-        Much of this work is carried out through the
+        A central focus is Fully Homomorphic Encryption, where computation is
+        performed directly on encrypted representations. From a systems
+        perspective, FHE changes encryption from a protective boundary into a
+        computational substrate, creating new requirements for algorithms,
+        compilers, memory systems, architecture, and hardware acceleration.
+      </p>
+
+      <p>
+        This research has explored the path from cryptographic capability to
+        practical encrypted-computing infrastructure through programmable
+        acceleration, processing-in-memory architectures, compiler and software
+        systems, application integration, and international standardization.
+      </p>
+
+      <h3>Standards Development and Deployment</h3>
+
+      <p>
+        Practical adoption also requires common terminology, security
+        expectations, interoperable representations, and implementation
+        guidance. I therefore connect systems research with international
+        standardization, including work on the ISO/IEC 28033 series for
+        Fully Homomorphic Encryption and broader efforts toward secure and
+        interoperable encrypted-computing systems.
+      </p>
+
+      <h3>Active Open-Source Research Platforms (MIT License) To Come Soon ...</h3>
+
+    </section>
+
+
+    <!-- =====================================================
+         Confidential Intelligence
+         ===================================================== -->
+
+    <section id="confidential-intelligence">
+
+      <h2>Confidential Intelligence</h2>
+
+      <p>
+        Confidential Intelligence asks a complementary question: instead of
+        continually adapting conventional algorithms to expensive encrypted
+        execution, can we design computational paradigms that are inherently
+        better matched to privacy-preserving computation?
+      </p>
+
+      <p>
+        Many algorithms were developed under the assumption that plaintext
+        arithmetic, memory access, branching, precision, and communication are
+        inexpensive. Those assumptions change substantially when computation
+        takes place over protected or encrypted representations.
+      </p>
+
+      <p>
+        The research therefore explores algorithms and data representations
+        whose computational structure aligns naturally with confidential
+        execution. The goal is to co-design algorithms, cryptography, software,
+        compilers, runtime systems, architectures, and hardware so that useful
+        privacy-preserving applications can operate efficiently at scale.
+      </p>
+
+      <p>
+        A central direction is the exploration of computational structures
+        that naturally map to encrypted arithmetic. Rather than treating the
+        cryptographic substrate as a fixed backend, the application algorithms
+        themselves become part of the design space.
+      </p>
+
+      <p>
+        Properties such as shallow computation graphs, regular data movement,
+        associative operations, SIMD-friendly representations, and predictable
+        communication may become important because they reduce the mismatch
+        between conventional algorithms and encrypted execution.
+      </p>
+
+      <p>
+        The broader objective is not simply to demonstrate that an individual
+        algorithm can execute under encryption, but to identify computational
+        paradigms capable of enabling meaningful confidential applications at
+        practical scale.
+      </p>
+
+      <h3>Active Open-Source Research Platforms (MIT License) To Come Soon ...</h3>
+
+    </section>
+
+
+    <!-- =====================================================
+         Secure AI and Hardware Security
+         ===================================================== -->
+
+    <section id="secure-ai-hardware-security">
+
+      <h2>Secure AI and Hardware Security</h2>
+
+      <p>
+        Artificial intelligence increasingly relies on specialized hardware,
+        accelerators, complex memory hierarchies, aggressive power management,
+        and heterogeneous computing platforms. These mechanisms deliver
+        substantial performance and efficiency gains, but they can also create
+        physical and architectural attack surfaces that are invisible at the
+        model or software layer.
+      </p>
+
+<h3>Side-Channel-Resistant AI Hardware (joint work with NCSU)</h3>
+
+<p>
+  One direction investigates how AI hardware can be designed to resist
+  physical side-channel attacks.
+  We study how information leakage
+  emerges across algorithms, accelerator architectures, and physical
+  implementations, and how protection mechanisms can be incorporated into
+  the design of AI hardware itself.
+</p>
+
+<p>
+  The broader objective is to develop AI accelerators whose security
+  properties are considered alongside performance and efficiency from the
+  outset, rather than relying exclusively on protections added after the
+  hardware has been designed.
+</p>
+
+
+<h3>Microarchitectural Physical Attacks on AIi (joint work with NCSU)</h3>
+
+<p>
+  A complementary direction
+  investigates how microarchitectural mechanisms can create
+  new physical attack surfaces against AI computation. Features introduced
+  for performance and energy efficiency can produce observable behavior that
+  reveals sensitive properties of models, workloads, and execution.
+</p>
+
+<p>
+  This work examines the interaction between AI workloads and the underlying
+  processor microarchitecture to identify these emerging attack surfaces and
+  understand how they can be mitigated without sacrificing the efficiency
+  benefits that created them.
+</p>
+
+      <h3>Faults and Resilient Encrypted Computation (joint work with TU Dresden and Barkhausen Institut)</h3>
+
+      <p>
+        Resilience is another dimension of trustworthy computing. Systems must
+        preserve meaningful guarantees when computation is affected by natural
+        faults, unreliable execution, or deliberate adversarial perturbations.
+      </p>
+
+      <p>
+        A recurring direction is the use of structure-aware detection and
+        recovery mechanisms that exploit properties of the underlying
+        computation rather than relying exclusively on generic redundancy.
+        This work currently intersects strongly with post-quantum cryptography and encrypted computation,
+        but the broader objective applies across secure and intelligent
+        computing systems.
+      </p>
+
+      <h3>Active Open-Source Research Platforms (MIT License)</h3>
+
+      <div class="pub">
+
+        <strong>
+          <a href="https://github.com/Confidential-Intelligence-Lab/ntt-resilience">
+            NTT Resilience
+          </a>
+        </strong>
+
+        — research on structure-aware resilience for Number Theoretic Transform
+        computation, exploring how the mathematical structure of a foundational
+        post-quantum kernel can support efficient fault detection and recovery.
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         Systems Perspective
+         ===================================================== -->
+
+    <section>
+
+      <h2>Systems Perspective</h2>
+
+      <p>
+        These research directions are deliberately interconnected.
+        Post-quantum migration requires agility, interoperability, and
+        resilient execution. Privacy-enhancing technologies depend on
+        algorithms, software, architecture, and specialized hardware.
+        Confidential Intelligence asks whether the algorithms themselves
+        should change. Secure AI demonstrates why guarantees at one abstraction
+        layer can fail when the underlying computing substrate remains exposed.
+      </p>
+
+      <p>
+        The common methodology is full-stack and experimental: build systems,
+        expose assumptions, measure tradeoffs, validate interoperability and
+        security, and use those results to inform standards, architecture, and
+        deployment.
+      </p>
+
+      <p>
+        Much of this work is developed through the
         <a href="https://confidential-intelligence-lab.github.io/">
           Confidential Intelligence Lab
         </a>
@@ -201,11 +387,13 @@
 
   </main>
 
+
   <footer class="site-footer">
     <div class="footer-wrap">
-      Ro Cammarota · University of California, Irvine
+      © 2026 Ro Cammarota · University of California, Irvine
     </div>
   </footer>
 
 </body>
+
 </html>
